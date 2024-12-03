@@ -1,5 +1,5 @@
 # MS-DIAL
-Version: 2.82
+Version: 4.9.22
 
 ## Website
 http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/index.html
