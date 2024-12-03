@@ -1,5 +1,5 @@
-# MRMPROBES
-Version: 2.42
+# MRMPROBS
+Version: 3.66
 
 ## Website
 http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index.html
