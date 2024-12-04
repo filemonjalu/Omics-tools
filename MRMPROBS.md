@@ -1,5 +1,5 @@
 # MRMPROBS
-Version: 3.66
+Version: 3.71
 
 ## Website
 https://systemsomicslab.github.io/compms/mrmprobs/main.html
@@ -9,17 +9,11 @@ An open-access RIKEN program called Multiple Reaction Monitoring-Based Probabili
 
 
 ## Functionality
-- Preprocessing
+- Preprocessing data
 
 ## Instrument Data Type
 - MS/GC-MS/GC-QqQ-MS
 - MS/LC-MS/LC-QqQ-MS
-
-## Approaches
--
-
-## Computer Skills
-Basic
 
 ## Software Type
 Package
@@ -28,7 +22,7 @@ Package
 Graphical user interface
 
 ## Operating System (OS)
-Windows
+Windows x64
 
 ## Language
 C#
@@ -36,22 +30,22 @@ C#
 ## Dependencies
 ≥ .NET Famework 4.0
 
-## Input Formats - Open
+## Input Formats
 Reifycs .ABF, .mzML
 
 ## Input Formats - Proprietary
 Agilent .d, AB Sciex .wiff, Thermo Fisher Scientific .raw, Shimadzu .LCD
 
-## Published
+## First published
 2013
 
 ## Last Updated
-2018
+2024
 
 ## License
 
-## Paper
-http://www.ncbi.nlm.nih.gov/pubmed/23581547
+## Publications
+https://pubmed.ncbi.nlm.nih.gov/25688256/ (2015)
+https://pubmed.ncbi.nlm.nih.gov/24753485/ (2014)
+http://www.ncbi.nlm.nih.gov/pubmed/23581547 (2013)
 
-## PMID
-23581547
