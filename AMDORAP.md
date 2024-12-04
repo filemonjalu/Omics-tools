@@ -1,11 +1,13 @@
 # AMDORAP
-Version: 1.0.6
+Version: 1.06
+
+![image](https://github.com/user-attachments/assets/a3df7f7b-3a80-4fc0-8b54-b7fe89bdb948)
 
 ## Website
 http://amdorap.sourceforge.net/
 
 ## Description
-Accurate m/z detection method for LC-orbitrap (AMDORAP) provides preprocessing of MS data consisting of 3 stages: collect all data points with intensities above a threshold value, group them by m/z values and estimate representative m/z values for the clusters and extract EICs.
+The Accurate m/z Detection Method for LC-Orbitrap (AMDORAP) facilitates the preprocessing of MS data through three main stages. First, it identifies all data points with intensities exceeding a predefined threshold. Next, these points are grouped based on their m/z values, and representative m/z values are determined for each cluster. Finally, extracted ion chromatograms (EICs) are generated from the processed data.
 
 ## Functionality
 - Preprocessing
@@ -16,14 +18,8 @@ Accurate m/z detection method for LC-orbitrap (AMDORAP) provides preprocessing o
 ## Approaches
 - Untargeted
 
-## Computer Skills
-Advanced
-
 ## Software Type
 R Package
-
-## Interface
-Command line interface
 
 ## Operating System (OS)
 - Unix/Linux
@@ -51,8 +47,5 @@ N/A
 ## License
 GPL-2
 
-## Paper
-http://www.ncbi.nlm.nih.gov/pubmed/21702951
-
-## PMID
-21702951
+## Publications
+- http://www.ncbi.nlm.nih.gov/pubmed/21702951
