@@ -1,23 +1,23 @@
 # MS-DIAL
-Version: 4.9.22
+Version: 5.1.23
+
+![image](https://github.com/user-attachments/assets/1d58f197-bf95-4af9-8c91-4303d51ae2f3)
 
 ## Website
-http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/index.html
+https://systemsomicslab.github.io/compms/msdial/main.html
 
 ## Description
-Provides deconvolution for untargeted data-independent acquisition (DIA) tandem MS data. Initially data are converted into the Analysis Base File (ABF) format, to allow for rapid data extraction. For peak detection, the peak detection algorithm first starts with a smoothing method (linearly weighted smoothing average, moving average, Savitzky-Golay or binomial filter) for retention time and accurate mass. Peaks are then detected by first finding the median amplitude (AF), first-order derivative (FF) and second-order derivative (SF) (the derivatives are calculated using Savitzky-Golay filter). The maximum amplitude difference between two adjacent peaks is detected, as well as the maxima between the first and second order derivatives. The edges of the peaks are recognised when the amplitude and first order derivative are both greater than AF and FF in two adjacent points and the tip is recognised when the sign of the first derivative changes and the second order derivative is less than SF. Two dimensional peak detection or peak spotting occurs by using retention time and accurate mass (MS1). Detected peak tops are displayed as spots, with spots of the same retention time and similar m/z being compared by peak height, to evaluate whether they should be merged or not. Each peak then undergoes deconvolution using the MS^2dec algorithm, which first extracts the product spectra for all precursor peaks on all MS/MS spectra (based on GC-MS deconvolution, but using accurate mass instead of nominal mass). Least squares optimisation is used to extract model peaks from chromatograms. Background noise and coeluted metabolites are removed by determining peak heights of reconstructed chromatograms. After smoothing, the chromatograph undergoes baseline correction by finding the local minimum of a user defined segment, calculating the median of all local minimums and discarding points above this value. Ideal slope and sharpness values are calculated, with an ideal slope of >0.95 required for a peak to be considered a model peak. Metabolites are identified using MassBank, LipidBlast, NIST or a custom list. Metabolite identifications are assigned a score based on similarity of MS/MS, MS1, RT and isotope ratio. Peak alignment is performed using an algorithm based on Joint Aligner in MZmine. Missing value imputation is also provided. Sequential windowed acquisition of all theoretical (SWATH) acquisition is a DIA approach, which was particularly used to test this software.
+For untargeted data-independent acquisition (DIA) tandem MS data, this software offers deconvolution. To facilitate quick data extraction, the data are first transformed into the Analysis Base File (ABF) format. The approach starts with a smoothing technique for peak identification, which may involve moving averages, Savitzky-Golay filters, linearly weighted smoothing averages, or binomial filters for accurate mass and retention time. The Savitzky-Golay filter is used to determine the first-order derivative (FF), second-order derivative (SF), and median amplitude (AF) in order to identify peaks. The method determines the maxima of the first and second derivatives by detecting the largest amplitude difference between neighboring peaks. When the amplitude and first-order derivative surpass AF and FF at two nearby sites, peak edges are identified. When the sign of the first derivative changes and the second derivative is less than SF, the peak tip is found. Accurate mass and retention time are used in two-dimensional peak identification, often known as "peak spotting" (MS1). Spots with the same retention duration and comparable m/z are evaluated by peak height to see if they should be merged. Detected peak tops are shown as spots. Each peak is resolved using the MS²Dec algorithm, designed to extract product spectra for all precursor peaks across MS/MS spectra. This method adapts GC-MS deconvolution principles, substituting nominal mass with accurate mass. It employs least squares optimization to isolate model peaks from chromatograms, effectively minimizing background noise and separating coeluted metabolites by evaluating reconstructed chromatograms’ peak intensities. After smoothing, baseline correction identifies local minima within user-defined segments, calculates their median, and excludes points exceeding this threshold. To qualify as model peaks, ideal slope and sharpness values are determined, requiring a slope >0.95. Metabolites are identified by referencing databases such as MassBank, LipidBlast, NIST, or custom libraries, with identification scores based on the similarity of MS/MS spectra, MS1 data, retention time (RT), and isotope patterns.Peak alignment leverages an algorithm inspired by the Joint Aligner in MZmine, with support for imputing missing values. The software was specifically tested using sequential windowed acquisition of all theoretical (SWATH) acquisition, a data-independent acquisition (DIA) method.
 
 ## Functionality
 - Preprocessing
 
 ## Instrument Data Type
 - MS/LC-MS/LC-MS/MS
+- GC/GC-MS/GC-MS/MS
 
-## Approaches
-- Untargeted
-
-## Computer Skills
-Advanced
+## Approach
+- Untargeted chemical compounds
 
 ## Software Type
 Package
@@ -27,13 +27,13 @@ Package
 - Graphical user interface
 
 ## Operating System (OS)
-Windows XP/Vista/7/8
+Windows
 
 ## Language
 C#
 
 ## Dependencies
-≥ .NET Famework 4.0, ≥4GB RAM
+≥ .NET Famework 4.0, ≥4GB RAM, x64
 
 ## Input Formats - Open
 .mzML
@@ -45,12 +45,12 @@ Agilent .d, AB Sciex .wiff, Thermo Fisher Scientific .raw, Bruker Daltonics .d, 
 2015
 
 ## Last Updated
-2018
+2024
 
 ## License
 
-## Paper
-http://www.ncbi.nlm.nih.gov/pubmed/25938372
-
-## PMID
-25938372
+## Publications
+https://www.nature.com/articles/s41587-020-0531-2 (2020)
+https://www.nature.com/articles/s41592-019-0358-2 (2019)
+https://www.nature.com/articles/nmeth.4512 (2017)
+https://pubmed.ncbi.nlm.nih.gov/25938372/ (2015)
