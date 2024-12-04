@@ -50,7 +50,7 @@ Agilent .d, AB Sciex .wiff, Thermo Fisher Scientific .raw, Shimadzu .LCD
 ## License
 
 ## Publications
-https://pubmed.ncbi.nlm.nih.gov/25688256/ (2015)
-https://pubmed.ncbi.nlm.nih.gov/24753485/ (2014)
-http://www.ncbi.nlm.nih.gov/pubmed/23581547 (2013)
+- https://pubmed.ncbi.nlm.nih.gov/25688256/ (2015)
+- https://pubmed.ncbi.nlm.nih.gov/24753485/ (2014)
+- http://www.ncbi.nlm.nih.gov/pubmed/23581547 (2013)
 
