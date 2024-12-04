@@ -1,24 +1,22 @@
-# MRMPROBS (including MRMDIFF) 
-Version: 3.71
+# MS-Finder
+Version: 3.61
 
-![image](https://github.com/user-attachments/assets/135446b2-2cc2-4241-ab58-4ea98799c074)
+![image](https://github.com/user-attachments/assets/b6f94e52-e960-4955-b198-27f058d494dc)
 
 ## Website
-https://systemsomicslab.github.io/compms/mrmprobs/main.html
+https://systemsomicslab.github.io/compms/msfinder/main.html
 
 ## Description
-Multiple Reaction Monitoring-Based Probabilistic System for Widely Targeted Metabolomics (MRMPROBS) offers statistical analysis along with automatic fragment identification and annotation from MRM experiments. Peaks are first found, categorized, and smoothed. Using a Savitzky-Golay filter, the median amplitude (AF), first-order derivative (FF), and second-order derivative (SF) are calculated in order to detect peaks. The maxima of the first and second-order derivatives are determined, as well as the maximum amplitude difference between two neighboring peaks. Peaks are said to have edges when their amplitude and first-order derivative both surpass AF and FF at two nearby sites and tips when the first derivative's sign shifts and the second-order derivative falls below SF. Each metabolite peak is then given a score based on its intensity, retention time, qualifier/target (QT) ratio, shape, and coelution similarity. The posterior probability (odds ratio in multivariate logistic regression) is then used to evaluate the peaks. The QT ratio and retention time are evaluated using the Gaussian function. By comparing the peak height to the highest peak in each transition record and its rank inside a particular transition record, peak intensity is assessed. The mProphet algorithm is used to evaluate shape and coelution similarity. Peak groups are assessed using the QT ratio, in which the qualifier transitions separate the metabolite from isomeric metabolites and background noise while the target transition quantifies the metabolite. The quantification value is chosen from peak groups that have the highest likelihood. Metabolites are detected in this technique by comparing them to a reference library. By employing LOWESS (QC samples) regression with a second-degree least-squares robust tri-cubic weight function, metabolite intensities can be normalized to an internal standard. After that, statistical analysis can be carried out using the multiple t-tests and PCA options.
+MS-Finder is a versatile tool designed to identify chemical compounds using both EI-MS (GC/MS) and MS/MS spectra. It can predict molecular formulas, annotate fragment ions, and elucidate structures of unknown compounds based on their mass spectra. Additionally, MS-Finder can search public spectral databases like MassBank, LipidBlast, and GNPS to identify unknown compounds from experimental peak data.
 
 ## Functionality
-- Preprocessing data
+- Chemical peak annotation identification
 
 ## Instrument Data Type
 - MS/GC-MS/GC-QqQ-MS
-- MS/LC-MS/LC-QqQ-MS
 
 ## Approach
-- Targeted chemical compounds
-- Carbon central metabolism
+- Chemical unknown peak identification
 
 ## Software Type
 Package
@@ -42,7 +40,7 @@ Reifycs .ABF, .mzML
 Agilent .d, AB Sciex .wiff, Thermo Fisher Scientific .raw, Shimadzu .LCD
 
 ## First published
-2013
+2016
 
 ## Last Updated
 2024
@@ -50,7 +48,6 @@ Agilent .d, AB Sciex .wiff, Thermo Fisher Scientific .raw, Shimadzu .LCD
 ## License
 
 ## Publications
-https://pubmed.ncbi.nlm.nih.gov/25688256/ (2015)
-https://pubmed.ncbi.nlm.nih.gov/24753485/ (2014)
-http://www.ncbi.nlm.nih.gov/pubmed/23581547 (2013)
+- https://www.nature.com/articles/nmeth.4512 (2017)
+- https://pubs.acs.org/doi/full/10.1021/acs.analchem.6b00770 (2016)
 
