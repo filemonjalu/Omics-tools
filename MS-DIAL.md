@@ -50,7 +50,7 @@ Agilent .d, AB Sciex .wiff, Thermo Fisher Scientific .raw, Bruker Daltonics .d, 
 ## License
 
 ## Publications
-https://www.nature.com/articles/s41587-020-0531-2 (2020)
-https://www.nature.com/articles/s41592-019-0358-2 (2019)
-https://www.nature.com/articles/nmeth.4512 (2017)
-https://pubmed.ncbi.nlm.nih.gov/25938372/ (2015)
+- https://www.nature.com/articles/s41587-020-0531-2 (2020)
+- https://www.nature.com/articles/s41592-019-0358-2 (2019)
+- https://www.nature.com/articles/nmeth.4512 (2017)
+- https://pubmed.ncbi.nlm.nih.gov/25938372/ (2015)
