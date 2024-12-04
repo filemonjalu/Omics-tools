@@ -1,5 +1,8 @@
 # AMDIS
-Version: 2.71
+Version: 2.73
+
+![image](https://github.com/user-attachments/assets/a7b030d4-cfb6-4538-bdef-6309e90ca2ef)
+
 
 ## Website
 http://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:amdis
@@ -14,22 +17,16 @@ Automated Mass Spectral Deconvolution and Identification System (AMDIS) provides
 - MS/GC-MS
 
 ## Approaches
--
-
-## Computer Skills
-Medium
+- Compound deconvolution and identification
 
 ## Software Type
 Package
-
-## Interface
-Graphical User Interface
 
 ## Operating System (OS)
 - Windows
 
 ## Language
-
+N/A
 
 ## Dependencies
 N/A
@@ -44,13 +41,10 @@ Aglient, Bruker, Finnigan, INFICON, JEOL/Schrader, Kratos, Mach3, MassLynx, Perk
 1996
 
 ## Last Updated
-2012
+2017
 
 ## License
 http://chemdata.nist.gov/mass-spc/amdis/downloads/EULA-AMDIS.pdf
 
-## Paper
+## Publications
 http://www.ncbi.nlm.nih.gov/pubmed/20185625
-
-## PMID
-20185625
