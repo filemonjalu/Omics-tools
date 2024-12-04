@@ -1,4 +1,4 @@
-# MRMPROBS
+# MRMPROBS (including MRMDIFF) 
 Version: 3.71
 
 ## Website
