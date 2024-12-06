@@ -1,22 +1,22 @@
-# AMDORAP
+# Batman NMR
 Version: 1.06
 
-![image](https://github.com/user-attachments/assets/a3df7f7b-3a80-4fc0-8b54-b7fe89bdb948)
+![image](https://github.com/user-attachments/assets/e140f45a-e44e-4bf2-982c-f927e21b7be5)
 
 ## Website
-http://amdorap.sourceforge.net/
+https://batman.r-forge.r-project.org/
 
 ## Description
-The Accurate m/z Detection Method for LC-Orbitrap (AMDORAP) facilitates the preprocessing of MS data through three main stages. First, it identifies all data points with intensities exceeding a predefined threshold. Next, these points are grouped based on their m/z values, and representative m/z values are determined for each cluster. Finally, extracted ion chromatograms (EICs) are generated from the processed data.
+Batman is an R package designed to estimate metabolite concentrations from Nuclear Magnetic Resonance (NMR) spectral data through a specialized Markov Chain Monte Carlo (MCMC) algorithm. The package deconvolutes peaks from 1D NMR spectra, assigns them to specific metabolites from a predefined target list, and calculates their concentrations. Its Bayesian model integrates prior knowledge of metabolite-specific peak patterns and accommodates peak position shifts frequently observed in biological NMR samples. By employing the MCMC algorithm, BATMAN samples from the joint posterior distribution of model parameters, delivering concentration estimates with reduced error compared to conventional numerical integration methods and achieving accuracy on par with manual deconvolution by expert spectroscopists.
 
 ## Functionality
-- Preprocessing
+- NMR data annotation
 
 ## Instrument Data Type
-- MS/LC-MS/LC-MS (Orbitrap)
+- NMR
 
 ## Approaches
-- Untargeted
+- Estimated compound concentration
 
 ## Software Type
 R Package
@@ -27,25 +27,28 @@ R Package
 - Windows
 
 ## Language
-R
+R, C++, MATLAB
 
 ## Dependencies
-xcms, mzR, Rcpp, BiocGenerics, Biobase
+R ≥ 2.15.0,doSNOW, foreach, iterators, snow, utils, plotrix
 
 ## Input Formats - Open
-mzXML, netCDF
+ASCII, R
 
 ## Input Formats - Proprietary
-N/A
+Bruker
 
 ## Published
 2011
 
 ## Last Updated
-2012
+2016
 
 ## License
 GPL-2
 
 ## Publications
-- http://www.ncbi.nlm.nih.gov/pubmed/21702951
+- https://europepmc.org/article/med/24853927 (2014)
+- https://pubs.acs.org/doi/10.1021/ac400237w (2013)
+- https://europepmc.org/article/med/22635605 (2012)
+- https://arxiv.org/abs/1105.2204 (2012)
